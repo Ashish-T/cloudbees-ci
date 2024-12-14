@@ -181,7 +181,7 @@ OperationsCenter:
       # OperationsCenter.License.Evaluation.Email -- email address of evaluating user
       Email: getashish26@gmail.com
       # OperationsCenter.License.Evaluation.Company -- company or organization of evaluating user
-      Company: Lonza
+      Company: AshishCompany
   # OperationsCenter.Name -- the name in the URL under which Operations Center will be accessible in the given host.
   # For instance, if Subdomain is true, the URL to access Operations Center will be {{OperationsCenter.Protocol}}://{{OperationsCenter.Name}}.{{OperationsCenter.HostName}}:{{OperationsCenter.Port}}
   # If Subdomain is false, the URL to access Operations Center will be {{OperationsCenter.Protocol}}://{{OperationsCenter.HostName}}:{{OperationsCenter.Port}}/{{OperationsCenter.Name}}
@@ -218,7 +218,7 @@ OperationsCenter:
   # Environment variables that get added to the container (useful for e.g. http_proxy)
     ContainerEnv:
     - name: http_proxy
-      value: "http://chvproxy.lonzagroup.net:8080"
+      value: "http://chvproxy.AshishCompanygroup.net:8080"
 
   # OperationsCenter.JavaOpts -- Additional java options to pass to the Operations Center
   JavaOpts: null
@@ -307,7 +307,7 @@ OperationsCenter:
     Class: ""
     # OperatsCenter.Ingress.Annotations -- annotations to put on Ingress object
     Annotations:
-      cert-manager.io/cluster-issuer: lonza-acme
+      cert-manager.io/cluster-issuer: AshishCompany-acme
       route.openshift.io/termination: edge
     tls:
       # OperationsCenter.Ingress.tls.Enable -- Set this to true in order to enable TLS on the ingress record
